@@ -48,7 +48,9 @@ Puedes obtener una clave gratuita en: [https://www.virustotal.com](https://www.v
 
 ```bash
 python virustotal_lookup.py --ip 8.8.8.8 
-python virustotal_lookup.py --url https://example.com python virustotal_lookup.py --domain example.com python virustotal_lookup.py --hash d41d8cd98f00b204e9800998ecf8427e 
+python virustotal_lookup.py --url https://example.com
+python virustotal_lookup.py --domain example.com
+python virustotal_lookup.py --hash d41d8cd98f00b204e9800998ecf8427e 
 python virustotal_lookup.py --upload archivo_sospechoso.exe
 ```
 
