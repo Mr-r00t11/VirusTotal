@@ -1,6 +1,7 @@
 # 🛡️ VirusTotal CLI
 
 This Python script allows you to query and analyze Indicators of Compromise (IoCs) using the VirusTotal API. It supports searches for IPs, URLs, domains, file hashes, and the ability to upload files for automatic scanning.
+
 ![](https://github.com/Mr-r00t11/VirusTotal/blob/main/img/VirusTotal.png?raw=true)
 ---
 ## 🚀 Features
