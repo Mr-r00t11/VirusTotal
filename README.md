@@ -1,66 +1,62 @@
-# 🛡️ VirusTotal Lookup Tool
+# 🛡️ VirusTotal CLI
 
-Este script en Python permite consultar y analizar indicadores de compromiso (IoCs) utilizando la API de VirusTotal. Ofrece soporte para búsquedas de IPs, URLs, dominios, hashes de archivos, y la capacidad de subir archivos para su escaneo automático.
+This Python script allows you to query and analyze Indicators of Compromise (IoCs) using the VirusTotal API. It supports searches for IPs, URLs, domains, file hashes, and the ability to upload files for automatic scanning.
+![](https://github.com/Mr-r00t11/VirusTotal/blob/main/img/VirusTotal.png?raw=true)
+---
+## 🚀 Features
+
+- Query information for:
+    - URLs
+    - IP addresses
+    - Domains
+    - Hashes (MD5, SHA1, SHA256)
+- File upload for dynamic analysis
+- Detailed analysis display:
+    - Detection engines
+    - Statistics (malicious, suspicious, harmless, etc.)
+    - Categories and relevant results
+- Console colors for easier reading
+- Visual threat identification with keywords (malware, phishing, etc.)
 
 ---
+## 🧰 Requirements
 
-## 🚀 Funcionalidades
-
-- Consulta de información para:
-  - URLs
-  - Direcciones IP
-  - Dominios
-  - Hashes (MD5, SHA1, SHA256)
-- Subida de archivos para análisis dinámico
-- Visualización detallada del análisis:
-  - Motores de detección
-  - Estadísticas (malicioso, sospechoso, inofensivo, etc.)
-  - Categorías y resultados relevantes
-- Colores en la consola para facilitar la lectura
-- Identificación visual de amenazas con palabras clave (malware, phishing, etc.)
-
----
-
-## 🧰 Requisitos
-
-- Python 3.6 o superior
-- Módulos:
-  - `requests`
-  - `argparse`
-  - `colorama`
-
-Instala los módulos necesarios con:
-
+- Python 3.6 or higher
+- Modules:
+    - `requests`
+    - `argparse`
+    - `colorama`
+  
+Install the required modules with:
 ```bash
 pip install requests colorama
 ```
+___
+## 🔑 Configuration
 
-## 🔑 Configuración
-
-Edita el script y reemplaza la siguiente línea con tu API Key de VirusTotal:
-
+Edit the script and replace the following line with your VirusTotal API Key:
 ```bash
 API_KEY = 'TU_API_KEY_AQUI'
 ```
-Puedes obtener una clave gratuita en: [https://www.virustotal.com](https://www.virustotal.com)
 
-## 🛠️ Uso
+You can get a free API key at: [https://www.virustotal.com](https://www.virustotal.com/)
+
+## 🛠️ Usage
 
 ```bash
-python virustotal_lookup.py --ip 8.8.8.8 
-python virustotal_lookup.py --url https://example.com
-python virustotal_lookup.py --domain example.com
-python virustotal_lookup.py --hash d41d8cd98f00b204e9800998ecf8427e 
-python virustotal_lookup.py --upload archivo_sospechoso.exe
+python virustotal.py --ip 8.8.8.8 
+python virustotal.py --url https://example.com
+python virustotal.py --domain example.com
+python virustotal.py --hash d41d8cd98f00b204e9800998ecf8427e 
+python virustotal.py --upload suspicious_file.exe
 ```
 
-## 📦 Parámetros
+## 📦 Parameters
 
-| Parámetro  | Descripción                     |
-| ---------- | ------------------------------- |
-| `--ip`     | Consulta una dirección IP       |
-| `--url`    | Consulta una URL                |
-| `--domain` | Consulta un dominio             |
-| `--hash`   | Consulta el hash de un archivo  |
-| `--upload` | Sube un archivo para su escaneo |
-___
+| Parameter  | Description                |
+| ---------- | -------------------------- |
+| `--ip`     | Query an IP address        |
+| `--url`    | Query a URL                |
+| `--domain` | Query a domain             |
+| `--hash`   | Query a file hash          |
+| `--upload` | Upload a file for scanning |
