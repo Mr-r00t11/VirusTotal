@@ -37,7 +37,7 @@ ___
 
 Edit the script and replace the following line with your VirusTotal API Key:
 ```bash
-API_KEY = 'TU_API_KEY_AQUI'
+API_KEY = 'API_KEY'
 ```
 
 You can get a free API key at: [https://www.virustotal.com](https://www.virustotal.com/)
